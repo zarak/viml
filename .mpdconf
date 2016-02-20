@@ -1,0 +1,7 @@
+bind_to_address         "127.0.0.1"
+music_directory         "/Users/zarak/Music/David Bowie - Best of Bowie"
+db_file                 "/Users/zarak/Documents/VimL/mpd.db"
+audio_output {
+    name "audio"
+    type "osx"
+}
