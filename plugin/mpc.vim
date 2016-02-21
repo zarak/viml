@@ -4,7 +4,7 @@ function! OpenMPC()
         if(mpcwin == -1)
             execute "sbuffer " . bufnr('mpc.mpdv')
         else
-            execute mpcwin . 'wincmd q'
+            execute mpcwin . 'wincmd w'
             return
         endif
     else
