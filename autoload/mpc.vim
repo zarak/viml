@@ -12,3 +12,11 @@ function! mpc#DisplayPlaylist()
         endif
     endfor
 endfunction
+
+
+function! mpc#PlaySong(no)
+    let song = split(getline(a:no), " ")
+    let results = split(system("mpc --format '%title% (%artist%)' play " . song[0]), "\n")
+    let message = '[mpc] NOW PLAYING: ' . results[0]
+    echomsg message
+endfunction
