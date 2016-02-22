@@ -9,6 +9,7 @@ function! OpenMPC()
         endif
     else
         execute "new mpc.mpdv"
+        AirlineToggle
     endif
     call mpc#DisplayPlaylist()
 endfunction
